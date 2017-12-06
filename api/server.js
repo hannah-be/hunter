@@ -10,10 +10,11 @@ server.use(bodyParser.json())
 // server.use(cors())
 
 // Routes
-// Pass any routes set in /rainfalls on the root directory
+// Pass any routes set in /products on the root directory
 server.use('/', [
-  require('../api/routes/rainfalls')
+  require('../api/routes/products')
 ])
+
 server.get('/', (req, res) => {
   res.json({ message: "Work" })
 })

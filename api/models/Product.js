@@ -1,6 +1,6 @@
 const mongoose = require('./init')
 
-var Product = mongoose.model('Product', {
+var Product = new mongoose.model('Product', {
   brandName: String,
   name: String
 })

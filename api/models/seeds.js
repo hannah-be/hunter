@@ -25,3 +25,4 @@ Product.create([
 .catch((error) => {
   console.error(error)
 })
+
