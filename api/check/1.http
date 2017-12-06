@@ -1,1 +1,22 @@
 GET http://localhost:7000/products
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imhhbm5haDI0QGdtYWlsLmNvbSIsImlhdCI6MTUxMjUzNDY3NiwiZXhwIjoxNTEzMTM5NDc2LCJzdWIiOiI1YTI3NTQ5MGFhMjExYTBlZjVmZTVkMTkifQ.ninBSaKvuqfmnAxgvYsMD3p6NKHB8Ay3cBfDtA_81Vk
+
+###
+POST http://localhost:7000/auth/register
+Content-Type: application/json
+
+{
+  "email": "hannah24@gmail.com",
+  "firstName": "Hannah",
+  "lastName": "Peters",
+  "password": "password123"
+}
+
+### 
+POST http://localhost:7000/auth
+Content-Type: application/json
+
+{
+  "email": "hannah24@gmail.com",
+  "password": "password123"
+}

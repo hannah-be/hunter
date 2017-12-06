@@ -1,10 +1,11 @@
 const express = require('express')
 const Product = require('../models/Product')
+const authMiddleware = require('../middleware/auth')
 
 const router = express.Router()
 
 //Read all Products :)
-router.get('/products', (req, res) => {
+router.get('/products', authMiddleware.requireJWT, (req, res) => {
   Product.find()
     .then((products) => {
       res.json({ products })

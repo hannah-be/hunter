@@ -1,5 +1,6 @@
 const express = require('express')
 const bodyParser = require('body-parser')
+const authMiddleware = require('./middleware/auth')
 
 // const cors = require('cors')
 const server = express()
@@ -7,17 +8,19 @@ const server = express()
 
 // Plugins/Middleware
 server.use(bodyParser.json())
+server.use(authMiddleware.initialize)
 // server.use(cors())
 
 // Routes
 // Pass any routes set in /products on the root directory
 server.use('/', [
-  require('../api/routes/products')
+  require('./routes/products'),
+  require('./routes/auth')
 ])
 
-server.get('/', (req, res) => {
-  res.json({ message: "Work" })
-})
+// server.get('/', (req, res) => {
+//   res.json({ message: "Work" })
+// })
 
 
 // Start server
