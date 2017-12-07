@@ -3,6 +3,9 @@ import './App.css';
 import SignInForm from './components/SignInForm'
 
 class App extends Component {
+  onSignIn = ({ email, password }) => {
+    console.log('App received', { email ,password })
+  }
   render() {
     return (
       <div className="App">
@@ -11,6 +14,7 @@ class App extends Component {
           Now delivering across Australia.
         </h2>
         <SignInForm
+        onSignIn={ this.onSignIn }
         />
       </div>
     );
