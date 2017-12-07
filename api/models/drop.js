@@ -6,8 +6,8 @@ Product.deleteMany()
     console.log('Deleted products')
   })
 
-// User.deleteMany()
-//   .then(() => {
-//     console.log('Deleted users')
-//     process.exit()
-//   })
+User.deleteMany()
+  .then(() => {
+    console.log('Deleted users')
+    process.exit()
+  })

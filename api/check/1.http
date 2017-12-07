@@ -1,15 +1,15 @@
 GET http://localhost:7000/products
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imhhbm5haDI0QGdtYWlsLmNvbSIsImlhdCI6MTUxMjUzNDY3NiwiZXhwIjoxNTEzMTM5NDc2LCJzdWIiOiI1YTI3NTQ5MGFhMjExYTBlZjVmZTVkMTkifQ.ninBSaKvuqfmnAxgvYsMD3p6NKHB8Ay3cBfDtA_81Vk
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imhhbm5haEBoYW5uYWgiLCJpYXQiOjE1MTI2MDU4ODksImV4cCI6MTUxMzIxMDY4OSwic3ViIjoiNWEyODg4YzAzMmI0MDcxZGE1NDY5NDkxIn0.cksHcSInP2802-CHf4eGVHLnWqgsqPKltUtE-4uk5T0
 
 ###
 POST http://localhost:7000/auth/register
 Content-Type: application/json
 
 {
-  "email": "hannah24@gmail.com",
+  "email": "hannah@hannah",
   "firstName": "Hannah",
   "lastName": "Peters",
-  "password": "password123"
+  "password": "123456"
 }
 
 ### 
